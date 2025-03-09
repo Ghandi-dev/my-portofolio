@@ -1,4 +1,4 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "ghandi.a-dev.site";
 // const baseURL = "calory.netlify.app";
 
 const routes = {
