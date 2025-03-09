@@ -22,7 +22,7 @@ export async function generateMetadata() {
       description: "Portfolio website showcasing my work.",
       url: baseURL,
       siteName: `${person.firstName}'s Portfolio`,
-      locale: "en_US",
+      locale: "id-ID",
       type: "website",
     },
     robots: {
@@ -83,12 +83,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       data-border={style.border}
       data-surface={style.surface}
       data-transition={style.transition}
-      className={classNames(
-        primary.variable,
-        secondary ? secondary.variable : "",
-        tertiary ? tertiary.variable : "",
-        code.variable,
-      )}
+      className={classNames(primary.variable, secondary ? secondary.variable : "", tertiary ? tertiary.variable : "", code.variable)}
     >
       <ToastProvider>
         <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
@@ -108,18 +103,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               tilt: effects.gradient.tilt,
               colorStart: effects.gradient.colorStart,
               colorEnd: effects.gradient.colorEnd,
-              opacity: effects.gradient.opacity as
-                | 0
-                | 10
-                | 20
-                | 30
-                | 40
-                | 50
-                | 60
-                | 70
-                | 80
-                | 90
-                | 100,
+              opacity: effects.gradient.opacity as 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100,
             }}
             dots={{
               display: effects.dots.display,
@@ -141,15 +125,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           />
           <Flex fillWidth minHeight="16"></Flex>
           <Header />
-          <Flex
-            position="relative"
-            zIndex={0}
-            fillWidth
-            paddingY="l"
-            paddingX="l"
-            horizontal="center"
-            flex={1}
-          >
+          <Flex position="relative" zIndex={0} fillWidth paddingY="l" paddingX="l" horizontal="center" flex={1}>
             <Flex horizontal="center" fillWidth minHeight="0">
               <RouteGuard>{children}</RouteGuard>
             </Flex>

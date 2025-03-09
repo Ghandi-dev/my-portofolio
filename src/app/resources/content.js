@@ -1,26 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Sonnya",
+  lastName: "Ghandi",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>,
 };
 
 const social = [
@@ -29,22 +24,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Ghandi-dev",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/sonnya-ghandi-a78142265/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "WhatsApp",
+    icon: "whatsapp",
+    link: "https://wa.me/6281572536826",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:sonnyaghandi@gmail.com",
   },
 ];
 
@@ -52,18 +47,18 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full Stack Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Saya Sonnya Ghandi, seorang Full-Stack Developer,
+      <br /> yang bersemangat dalam membangun aplikasi yang scalable dan efisien.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "Tentang Saya",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -73,22 +68,23 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Tentang Saya",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Saya adalah seorang Full-Stack Developer yang berdomisili di Purwakarta-Indonesia, dengan passion dalam membangun solusi teknologi yang scalable dan
+        efisien. Fokus utamanya adalah mengembangkan aplikasi berbasis web yang interaktif serta mengintegrasikan teknologi terbaru untuk meningkatkan
+        pengalaman pengguna.
       </>
     ),
   },
+
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -96,14 +92,8 @@ const about = {
         timeframe: "2022 - Present",
         role: "Senior Design Engineer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
+          <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -120,14 +110,8 @@ const about = {
         timeframe: "2018 - 2022",
         role: "Lead Designer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+          <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>,
         ],
         images: [],
       },
@@ -135,51 +119,225 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Pendidikan",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Sekolah Tinggi Teknologi Wastukancana Purwakarta",
+        description: <>Teknik Informatika - IPK 3.94</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skill",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Next.js",
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/skill/nextjs-icon-svgrepo-com-light.svg",
             alt: "Project image",
-            width: 16,
-            height: 9,
+            width: 5,
+            height: 5,
           },
+        ],
+      },
+      {
+        title: "MongoDB",
+        images: [
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/skill/mongo-svgrepo-com.svg",
             alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "React",
+        images: [
+          {
+            src: "/images/skill/reactjs-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Express",
+        images: [
+          {
+            src: "/images/skill/express-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Node.js",
+        images: [
+          {
+            src: "/images/skill/node-js-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Tailwind",
+        images: [
+          {
+            src: "/images/skill/tailwind-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+    ],
+  },
+};
+const contact = {
+  label: "About",
+  title: "Tentang Saya",
+  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  tableOfContent: {
+    display: true,
+    subItems: false,
+  },
+  avatar: {
+    display: true,
+  },
+  calendar: {
+    display: false,
+    link: "https://cal.com",
+  },
+  intro: {
+    display: true,
+    title: "Tentang Saya",
+    description: (
+      <>
+        Saya adalah seorang Full-Stack Developer yang berdomisili di Purwakarta-Indonesia, dengan passion dalam membangun solusi teknologi yang scalable dan
+        efisien. Fokus utamanya adalah mengembangkan aplikasi berbasis web yang interaktif serta mengintegrasikan teknologi terbaru untuk meningkatkan
+        pengalaman pengguna.
+      </>
+    ),
+  },
+
+  work: {
+    display: false, // set to false to hide this section
+    title: "Work Experience",
+    experiences: [
+      {
+        company: "FLY",
+        timeframe: "2022 - Present",
+        role: "Senior Design Engineer",
+        achievements: [
+          <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
+          <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
+        company: "Creativ3",
+        timeframe: "2018 - 2022",
+        role: "Lead Designer",
+        achievements: [
+          <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+          <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>,
+        ],
+        images: [],
+      },
+    ],
+  },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Pendidikan",
+    institutions: [
+      {
+        name: "Sekolah Tinggi Teknologi Wastukancana Purwakarta",
+        description: <>Teknik Informatika - IPK 3.94</>,
+      },
+    ],
+  },
+  technical: {
+    display: true, // set to false to hide this section
+    title: "Skill",
+    skills: [
+      {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/skill/nextjs-icon-svgrepo-com-light.svg",
             alt: "Project image",
-            width: 16,
-            height: 9,
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "MongoDB",
+        images: [
+          {
+            src: "/images/skill/mongo-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "React",
+        images: [
+          {
+            src: "/images/skill/reactjs-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Express",
+        images: [
+          {
+            src: "/images/skill/express-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Node.js",
+        images: [
+          {
+            src: "/images/skill/node-js-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
+          },
+        ],
+      },
+      {
+        title: "Tailwind",
+        images: [
+          {
+            src: "/images/skill/tailwind-svgrepo-com.svg",
+            alt: "Project image",
+            width: 5,
+            height: 5,
           },
         ],
       },
@@ -198,7 +356,7 @@ const blog = {
 const work = {
   label: "Work",
   title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  description: `Dikerjakan dan didesign oleh ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -282,4 +440,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, contact };

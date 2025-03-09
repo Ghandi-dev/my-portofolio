@@ -1,11 +1,13 @@
 const baseURL = "demo.magic-portfolio.com";
+// const baseURL = "calory.netlify.app";
 
 const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
+  "/contact": false,
 };
 
 // Enable password protection on selected routes
@@ -63,7 +65,7 @@ const effects = {
 };
 
 const display = {
-  location: true,
+  location: false,
   time: true,
 };
 
